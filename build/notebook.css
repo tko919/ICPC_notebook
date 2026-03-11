@@ -7,20 +7,20 @@ code {
 }
 
 nav#toc {
-    break-after: column;
+    break-after: auto;
 }
 
 @media print {
     body {
-        column-count: 2;
+        column-count: 3;
     }
 
     @page {
-        size: A4 portrait;
+        size: A4 landscape;
 
         /* ヘッダー */
         @top-left {
-            content: "tatyam/ICPC_notebook";
+            content: "DaiMonge (Kyoto University)";
         }
     }
 }

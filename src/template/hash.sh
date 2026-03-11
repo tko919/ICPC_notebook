@@ -1,3 +1,3 @@
-# 使い方: sh hash.sh -> コピペ -> Ctrl + D
-# コメント・空白・改行を削除して md5 でハッシュする
+# 使い⽅: sh hash.sh -> コピペ -> Ctrl + D
+# コメント・空⽩・改⾏を削除して md5 でハッシュする
 g++ -dD -E -P -fpreprocessed - | tr -d '[:space:]' | md5sum | cut -c-6
