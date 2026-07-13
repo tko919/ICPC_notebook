@@ -1,5 +1,5 @@
 #!bin/bash
-if ! g++ -std=gnu++2a -Wall -Wextra -Wshadow -DGLIBCXX_DEBUG -DLOCAL -ftrapv $1.cpp; then
+if ! g++ -std=gnu++2a -Wall -Wextra -Wshadow -D_GLIBCXX_DEBUG -DLOCAL -ftrapv $1.cpp; then
     echo CE
     return
 fi
